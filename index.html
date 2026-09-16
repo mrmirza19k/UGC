@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr Mirza | AI & Tech Content Creator | UGC & Content Strategy</title>
+<meta name="description" content="Mr Mirza is an AI & Tech Content Creator specializing in UGC, short-form video, AI/SaaS content, product storytelling, content strategy, and creator outreach.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">Mr Mirza</div>
+    <div class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#outreach">Creator Outreach</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Work With Me</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero wrap">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">AI & Tech Content Creator</span>
+      <h1>I turn AI and Tech products into content people want to watch.</h1>
+      <p class="sub">I create short-form videos, UGC, product content, and social-first creative for AI, SaaS, career, and technology brands — and help brands find and manage the right creators for their campaigns.</p>
+      <div class="btn-row">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Work With Me</a>
+      </div>
+      <div class="social-row">
+        <a href="https://www.instagram.com/careerluci">Instagram</a>
+        <a href="https://www.youtube.com/@CareerLuci">YouTube</a>
+        <a href="https://www.linkedin.com/in/mrmirza19k">LinkedIn</a>
+        <a href="https://www.tiktok.com/@code_mirza">TikTok</a>
+        <a href="https://twitter.com/genz_job1">X</a>
+      </div>
+    </div>
+    <div class="reel-stack">
+      <div class="reel r1">
+        <video src="./videos/video1.mp4" muted playsinline loop></video>
+        <button class="play" onclick="toggleInlineVideo(this)">▶</button>
+        <span class="tag">AI / SaaS</span>
+      </div>
+      <div class="reel r2">
+        <video src="./videos/video2.mp4" muted playsinline loop></video>
+        <button class="play" onclick="toggleInlineVideo(this)">▶</button>
+        <span class="tag">UGC</span>
+      </div>
+      <div class="reel r3">
+        <video src="./videos/robo3.mp4" muted playsinline loop></video>
+        <button class="play" onclick="toggleInlineVideo(this)">▶</button>
+        <span class="tag">Career</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ACHIEVEMENT -->
+<section class="wrap" style="padding-top:0;">
+  <div class="achieve">
+    <div>
+      <div class="num">10M+ Views</div>
+      <div class="label">Generated through content created for Parakeet AI.</div>
+    </div>
+    <a href="#parakeet" class="btn btn-primary">See the Work</a>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Brand Wall</div>
+    <h2>Brands & products I've created for</h2>
+    <p>Click a brand to jump to the related content, campaign, or case study.</p>
+  </div>
+  <div class="brand-grid" id="brandGrid"></div>
+</section>
+
+<!-- FEATURED WORK -->
+<section class="wrap" id="work">
+  <div class="sec-head">
+    <div class="kicker">Portfolio</div>
+    <h2>Selected work</h2>
+    <p>Short-form content, UGC, product storytelling, and AI/tech campaigns.</p>
+  </div>
+  <div class="filters" id="filterRow"></div>
+  <div class="work-grid" id="workGrid"></div>
+</section>
+
+<!-- PARAKEET CASE STUDY -->
+<section class="wrap" id="parakeet">
+  <div class="sec-head">
+    <div class="kicker">Featured Case Study</div>
+    <h2>Parakeet AI</h2>
+  </div>
+  <div class="case-study">
+    <div class="case-top">
+      <div>
+        <h3>AI / SaaS / Content Creation</h3>
+        <div class="cat">Content created for Parakeet AI</div>
+      </div>
+      <div class="case-badge">10M+ Views</div>
+    </div>
+    <div class="case-cols">
+      <div>
+        <h4>The Challenge</h4>
+        <p>Create engaging, social-first content around an AI product and communicate its value quickly to the target audience.</p>
+      </div>
+      <div>
+        <h4>My Role</h4>
+        <ul>
+          <li>Content creation & short-form video</li>
+          <li>Talking-head / UGC content</li>
+          <li>Product storytelling & creative concepts</li>
+          <li>Hooks & CTA development</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Content Strategy</h4>
+        <ul>
+          <li>Strong hooks & relatable problems</li>
+          <li>Fast-paced AI product demonstrations</li>
+          <li>Clear value proposition</li>
+          <li>Strong, direct CTA</li>
+        </ul>
+      </div>
+    </div>
+    <h4 style="margin-top:32px;">Result</h4>
+    <p style="color:var(--muted); font-size:0.95rem; margin-top:8px;">10M+ views generated.</p>
+    <div class="placeholder-row">
+      <div class="placeholder video-slot">
+        <video src="videos/para623k.mp4" muted playsinline loop></video>
+        <button class="play" onclick="toggleInlineVideo(this)">▶</button>
+      </div>
+      <div class="placeholder video-slot">
+        <video src="videos/para6.3.mp4" muted playsinline loop></video>
+        <button class="play" onclick="toggleInlineVideo(this)">▶</button>
+      </div>
+      <div class="placeholder video-slot">
+        <video src="videos/para3.mp4" muted playsinline loop></video>
+        <button class="play" onclick="toggleInlineVideo(this)">▶</button>
+      </div>
+      <!-- <div class="placeholder">Analytics screenshot</div> -->
+       <div class="placeholder analytics-slot">
+  <img src="videos/para.ana1.png" alt="Parakeet AI Analytics Screenshot">
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- CREATOR OUTREACH -->
+<section class="wrap" id="outreach">
+  <div class="sec-head">
+    <div class="kicker">Creator Ops</div>
+    <h2>Creator outreach & recruitment</h2>
+    <p>Finding the right creators for the right campaign.</p>
+  </div>
+  <div class="card" style="margin-bottom:36px;">
+    <h4>Zagged — Tier 1 Creator Recruitment</h4>
+    <p>Worked on creator outreach and recruitment for Zagged, focused on sourcing and hiring Tier 1 creators for content campaigns. Focused on Tier 1 creator recruitment according to campaign requirements.</p>
+  </div>
+  <div class="grid-3" style="margin-bottom:40px;">
+    <div class="card"><h4>Sourcing</h4><p>Creator research, sourcing, and Instagram profile research to build a qualified pipeline.</p></div>
+    <div class="card"><h4>Screening</h4><p>Outreach, initial communication, portfolio evaluation, and creator qualification.</p></div>
+    <div class="card"><h4>Coordination</h4><p>Managing outreach, following recruitment requirements, and coordinating creator communication.</p></div>
+  </div>
+  <div class="flow">
+    <span class="step">Research</span><span class="arrow">→</span>
+    <span class="step">Source</span><span class="arrow">→</span>
+    <span class="step">Outreach</span><span class="arrow">→</span>
+    <span class="step">Screen</span><span class="arrow">→</span>
+    <span class="step">Qualify</span><span class="arrow">→</span>
+    <span class="step">Shortlist</span><span class="arrow">→</span>
+    <span class="step">Hire</span>
+  </div>
+</section>
+
+<!-- UGC PROGRAM MANAGEMENT -->
+<section class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Campaign Ops</div>
+    <h2>UGC campaign management</h2>
+    <p>The full workflow, from creator discovery to performance analysis.</p>
+  </div>
+  <div class="flow-vert">
+    <span class="step">Creator Discovery</span><span class="arrow">↓</span>
+    <span class="step">Outreach</span><span class="arrow">↓</span>
+    <span class="step">Screening</span><span class="arrow">↓</span>
+    <span class="step">Onboarding</span><span class="arrow">↓</span>
+    <span class="step">Briefing</span><span class="arrow">↓</span>
+    <span class="step">Content Creation</span><span class="arrow">↓</span>
+    <span class="step">Review</span><span class="arrow">↓</span>
+    <span class="step">Optimization</span><span class="arrow">↓</span>
+    <span class="step">Publishing</span><span class="arrow">↓</span>
+    <span class="step">Performance Analysis</span>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="wrap" id="services">
+  <div class="sec-head">
+    <div class="kicker">Services</div>
+    <h2>What I can create for your brand</h2>
+  </div>
+  <div class="grid-3">
+    <div class="card"><h4>Short-Form Video</h4><p>Reels, Shorts, TikToks, and vertical content built to stop the scroll.</p></div>
+    <div class="card"><h4>UGC</h4><p>Authentic creator-style product content, demonstrations, and testimonials.</p></div>
+    <div class="card"><h4>AI & SaaS Content</h4><p>Turning complex AI and SaaS features into simple, engaging content.</p></div>
+    <div class="card"><h4>Product Storytelling</h4><p>Showing products through relatable problems, use cases, and demonstrations.</p></div>
+    <div class="card"><h4>Content Strategy</h4><p>Hooks, concepts, scripts, CTAs, creative angles, and platform strategy.</p></div>
+    <div class="card"><h4>Creator Outreach</h4><p>Finding, contacting, screening, and recruiting the right creators.</p></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Process</div>
+    <h2>How a piece of content gets made</h2>
+  </div>
+  <div class="process-row" id="processRow"></div>
+</section>
+
+<!-- PERFORMANCE -->
+<section class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Performance</div>
+    <h2>Content that gets attention</h2>
+  </div>
+  <div class="perf-hero">
+    <span class="big">10M+</span>
+    <span style="color:var(--muted); font-size:1.05rem;">views generated for Parakeet AI</span>
+  </div>
+  <div class="platform-grid">
+    <div class="platform-card"><div class="pname">Instagram</div><div class="pnote">Reels & UGC</div></div>
+    <div class="platform-card"><div class="pname">YouTube</div><div class="pnote">Shorts-form</div></div>
+    <div class="platform-card"><div class="pname">Facebook</div><div class="pnote">Product content</div></div>
+    <div class="platform-card"><div class="pname">TikTok</div><div class="pnote">Short clips</div></div>
+  </div>
+  <!-- <div class="upload-box">Analytics screenshots go here — views, reach, engagement, watch time, shares, saves.</div> -->
+</section>
+
+<!-- ABOUT -->
+<section class="wrap" id="about">
+  <div class="sec-head">
+    <div class="kicker">About</div>
+    <h2>Creator. Strategist. Tech enthusiast.</h2>
+  </div>
+  <div class="about-grid">
+    <div>
+      <p>I'm an AI and technology-focused content creator specializing in short-form video, UGC, product storytelling, and social-first content.</p>
+      <p>I've created content for AI, SaaS, career, education, and technology products, while also working on the management side of creator campaigns.</p>
+      <p>My experience includes content creation, creator outreach, recruitment, onboarding, content review, campaign coordination, and content strategy. With a Computer Science background, I can understand technical products quickly and turn complex features into simple, relatable content.</p>
+    </div>
+    <div class="grid-4" style="grid-template-columns:1fr 1fr;">
+      <div class="card"><h4>I Understand Tech</h4><p>CS background helps me get inside AI and SaaS products quickly.</p></div>
+      <div class="card"><h4>I Understand Content</h4><p>Hooks, storytelling, pacing, retention, and CTAs.</p></div>
+      <div class="card"><h4>I Understand Creators</h4><p>Sourcing, outreach, recruitment, onboarding, and management.</p></div>
+      <div class="card"><h4>I Understand Campaigns</h4><p>Idea to publishing to performance analysis.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH ADVANTAGE -->
+<section class="wrap">
+  <div class="sec-head">
+    <div class="kicker">My Tech Advantage</div>
+    <h2>I don't just create content about technology — I understand how it works.</h2>
+  </div>
+  <div class="tech-tags">
+    <span class="tech-tag">Python</span>
+    <span class="tech-tag">JavaScript</span>
+    <span class="tech-tag">PHP</span>
+    <span class="tech-tag">React</span>
+    <span class="tech-tag">Next.js</span>
+    <span class="tech-tag">Generative AI</span>
+    <span class="tech-tag">Gemini API</span>
+    <span class="tech-tag">MySQL</span>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="wrap">
+  <div class="sec-head">
+    <div class="kicker">Experience</div>
+    <h2>Where I've worked</h2>
+  </div>
+  <div class="exp-item">
+    <h4>RoboApply Jobs</h4>
+    <div class="role">Content & UGC Program Management</div>
+    <ul>
+      <li>Creator recruitment & onboarding</li>
+      <li>Content management & review</li>
+      <li>Creator communication & campaign coordination</li>
+      <li>Content strategy & performance analysis</li>
+    </ul>
+  </div>
+  <div class="exp-item">
+    <h4>Zagged</h4>
+    <div class="role">Creator Outreach & Recruitment</div>
+    <ul>
+      <li>Tier 1 creator sourcing & research</li>
+      <li>Outreach, screening & qualification</li>
+      <li>Hiring coordination</li>
+    </ul>
+  </div>
+  <div class="exp-item">
+    <h4>Solitaire Infosys Pvt. Ltd.</h4>
+    <div class="role">Software Engineer intern</div>
+    <ul>
+      <li>Developed web applications using PHP, MySQL, HTML, CSS & JavaScript. </li>
+      <li>Worked on backend development, database management, debugging, and testing. </li>
+      <li>Implemented features and fixed technical issues with the development team.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- RESUME -->
+<!-- <section class="wrap" style="text-align:center;">
+  <h2 style="margin-bottom:14px;">Want the full picture?</h2>
+  <p style="color:var(--muted); margin-bottom:28px;">View my content creator resume and experience.</p>
+  <div class="btn-row" style="justify-content:center;">
+    <a href="#" class="btn btn-ghost">View Resume</a>
+    <a href="#" class="btn btn-primary">Download Resume</a>
+  </div>
+</section> -->
+
+<!-- CONTACT -->
+<section class="wrap" id="contact">
+  <div class="sec-head">
+    <div class="kicker">Contact</div>
+    <h2>Let's create something worth watching.</h2>
+    <p>Have an AI product, SaaS platform, campaign, or creator program that needs content? Let's talk.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-links">
+      <a href="mailto:mr.mirza.19k@gmail.com">Email</a>
+      <a href="https://www.instagram.com/mr_mirza_19k">Instagram</a>
+      <a href="https://www.linkedin.com/in/mrmirza19k">LinkedIn</a>
+      <a href="https://www.youtube.com/@CareerLuci">YouTube</a>
+      <a href="https://www.tiktok.com/@code_mirza">TikTok</a>
+    </div>
+    <!-- <form action="https://formspree.io/f/mwlpedvz" method="POST">
+
+  <input type="text" name="name" placeholder="Name" required>
+
+  <input type="email" name="email" placeholder="Email" required>
+
+  <input type="text" name="company" placeholder="Company">
+
+  <input 
+    type="text" 
+    name="looking_for" 
+    placeholder="What are you looking for?"
+  >
+
+  <textarea 
+    name="message" 
+    placeholder="Message"
+  ></textarea>
+
+  <button type="submit" class="btn btn-primary">
+    Start a Conversation
+  </button>
+
+</form> -->
+<form id="contactForm" action="https://formspree.io/f/mwlpedvz" method="POST">
+
+  <input type="text" name="name" placeholder="Name" required>
+
+  <input type="email" name="email" placeholder="Email" required>
+
+  <input type="text" name="company" placeholder="Company">
+
+  <input type="text" name="looking_for" placeholder="What are you looking for?">
+
+  <textarea name="message" placeholder="Message"></textarea>
+
+  <button type="submit" class="btn btn-primary">
+    Start a Conversation
+  </button>
+
+  <div id="formMessage" style="display:none; margin-top:15px;"></div>
+
+</form>
+
+<script>
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+contactForm.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const submitButton = contactForm.querySelector("button[type='submit']");
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending...";
+
+  try {
+    const response = await fetch(contactForm.action, {
+      method: "POST",
+      body: new FormData(contactForm),
+      headers: {
+        "Accept": "application/json"
+      }
+    });
+
+    if (response.ok) {
+      contactForm.reset();
+
+      formMessage.style.display = "block";
+      formMessage.textContent =
+        "Thanks! Your message has been sent successfully. I'll get back to you soon.";
+
+      submitButton.disabled = false;
+      submitButton.textContent = "Start a Conversation";
+    } else {
+      throw new Error("Submission failed");
+    }
+
+  } catch (error) {
+    formMessage.style.display = "block";
+    formMessage.textContent =
+      "Something went wrong. Please try again.";
+
+    submitButton.disabled = false;
+    submitButton.textContent = "Start a Conversation";
+  }
+});
+</script>
+
+
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="fname">MR MIRZA</div>
+      <div>AI & Tech Content Creator</div>
+    </div>
+    <div>UGC • Short-Form Video • AI Content • Content Strategy • Creator Outreach</div>
+    <div class="social-row">
+      <a href="https://www.instagram.com/careerluci">Instagram</a><a href="https://www.youtube.com/@CareerLuci">YouTube</a><a href="https://www.linkedin.com/in/mrmirza19k">LinkedIn</a><a href="https://www.tiktok.com/@code_mirza">TikTok</a><a href="https://x.com/genz_job1">X</a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="mthumb">
+      <video id="mVideo" src="videos/example-video.mp4" muted playsinline loop></video>
+      <button class="play" id="mPlayBtn" onclick="toggleInlineVideo(this)">▶</button>
+    </div>
+    <h3 id="mTitle"></h3>
+    <div class="mmeta" id="mMeta"></div>
+    <div class="mresult" id="mResult"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
